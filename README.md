@@ -53,6 +53,7 @@ Default is 45, if it is too dark lower it, otherwise increase the value (I used 
 More about:
 
 PCD8544 LCD SHIELD: http://lovebookstore.com/amazon_store/item/B00NKAME8S
+
 WIRING PI: https://projects.drogon.net/raspberry-pi/wiringpi/
 
 Other librarys: https://github.com/ronanguilloux/Raspberry-Pi-Utils
