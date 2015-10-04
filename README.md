@@ -16,16 +16,22 @@ Usage:
 1) If the WiringPi is not installed, please do this:
 
 cd /
+
 git clone git://git.drogon.net/wiringPi
+
 cd /wiringPi
+
 ./build
 
 2) After this copy the PCD8544 directory downloandig this library file zip to a directory of you free choose.
 Example:
 
 cd /
+
 mkdir PCD8544
+
 cd PCD8544
+
 git clone git://github.com/gtrento/PCD8544
 
 The PCD8544.c and PCD8544.h files is a library, the pcd8544_rpi.c is a file example to show on a LCD display the system informations like Uptime, CPU percent use, RAM memory use (MB) and the DHCP IP address number.
