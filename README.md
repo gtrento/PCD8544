@@ -1,17 +1,17 @@
 # PCD8544
-@Library to LCD Display PCD8544 Shield v2.0 (By ArduinoKing.com) for Raspberry Pi 2 with a CPU and IP System Info
+#Library to LCD Display PCD8544 Shield v2.0 (By ArduinoKing.com) for Raspberry Pi 2 with a CPU and IP System Info
 
 A simple PCD8544 LCD (Nokia3310/5110) driver. Target board is Raspberry Pi Model B+. 
 This driver uses 5 GPIOs on target board with a bit-bang SPI implementation (hence, may not be as fast but seems fast enough). The pcd8544_rpi.c tool, to be compiled, allow you to display CPU and IP info on LCD Display. 
 Makes use of WiringPI-library of Gordon Henderson (https://projects.drogon.net/raspberry-pi/wiringpi/)
 
-!Requirements
+#Requirements
 
 - Rasbian Linux last version (use sudo apt-get update) - February 25th 2015 or later 
 - This makes use of WiringPI-library of Gordon Henderson - so the WiringPI-library is required to be installed.
 - The GCC (GNU C Compiler) release 5.2.
 
-@Usage:
+#Usage:
 
 1) If the WiringPi is not installed, please do this:
 
