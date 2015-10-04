@@ -28,15 +28,13 @@ Example:
 
 cd /
 
-mkdir PCD8544
-
-cd PCD8544
-
-git clone git://github.com/gtrento/PCD8544
+git clone git://github.com/gtrento/PCD8544.git
 
 The PCD8544.c and PCD8544.h files is a library, the pcd8544_rpi.c is a file example to show on a LCD display the system informations like Uptime, CPU percent use, RAM memory use (MB) and the DHCP IP address number.
 
 3) Since GCC is installed on Raspberry Pi images, you can easily build them using the command:
+
+cd /PCD8544
 
 $ cc -o cpushow pcd8544_rpi.c PCD8544.c  -L/usr/local/lib -lwiringPi
 
