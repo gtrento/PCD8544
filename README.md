@@ -57,7 +57,7 @@ vi pcd8544_rpi.c
 Default is 45, if it is too dark lower it, otherwise increase the value (I used to 65). Else, decrease the value.
 
 
-More about:
+#More about
 
 PCD8544 LCD SHIELD: http://lovebookstore.com/amazon_store/item/B00NKAME8S
 
