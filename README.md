@@ -11,7 +11,7 @@ Makes use of WiringPI-library of Gordon Henderson (https://projects.drogon.net/r
 - This makes use of WiringPI-library of Gordon Henderson - so the WiringPI-library is required to be installed.
 - The GCC (GNU C Compiler) release 5.2.
 
-#Usage:
+#Usage
 
 1) If the WiringPi is not installed, please do this:
 
