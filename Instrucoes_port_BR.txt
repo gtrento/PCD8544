@@ -1,0 +1,59 @@
+BIBLIOTECA PARA DISPLAY LCD PCD8544 PARA RASPBERRY PI 2 EM C
+
+Por Gustavo Trento Silva - Outubro/2015
+
+REQUISITOS:
+
+- Raspberry Pi 2 
+- Linux Raspbian (versão 15-Maio-2015)
+- Wiring Pi
+- Biblioteca PCD8544
+- Recomendado editor VIM e compilador GCC
+
+INTRODUÇÃO:
+
+Este é um pacote de arquivos em linguagem C, contendo a biblioteca para o display PCD8544 Shield para Raspberry PI Modelo B+.
+O produto pode ser adquirido no Brasil pela www.eletrodex.com.br, e é muito simples de instalar fisicamente no Raspberry.
+Contém nesta biblioteca um exemplo para ver as informações de CPU, RAM e endereço IP no display.
+Mais exemplos podem ser obtidos em https://github.com/search?utf8=%E2%9C%93&q=pcd8544
+
+INSTALAÇÃO:
+
+PASSO 1
+
+$ apt-get update
+
+PASSO 2
+$ cd/
+$ git clone git://git.drogon.net/wiringPi
+$ cd wiringPi
+$ ./build
+
+OBS.: Para testar execute:
+$ gpio  -v
+$ gpio readall
+
+PASSO 3
+$ export PATH=$PATH:/usr/local/lib:/wiringPi:/wiringPi/wiringPi
+
+PASSO 4
+$ cd /
+$ git clone git://github.com/gtrento/PCD8544.git
+
+PASSO 5
+$ cd /PCD8544
+$ cc -o cpushow pcd8544_rpi.c PCD8544.c –lwiringPi
+OU
+$ cc -o cpushow pcd8544_rpi.c PCD8544.c –L/usr/local/lib –lwiringPi
+
+PASSO 6
+$ ./cpushow
+
+OBS.: Se ficar muito claro o contraste, edite no arquivo pcd8544_rpi.c o seguinte valor padrão de 45 para 65:
+
+vi pcd8544_rpi.c
+
+//lcd contrast
+int contrast = 65;
+
+Salve o arquivo e repita o passo 5 e passo 6.
